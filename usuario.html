@@ -1,23 +1,81 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LP | Sistema de Orçamentos — Usuário (Sincronizado)</title><style>
-:root{font-family:Arial,Helvetica,sans-serif;color:#17233b;background:#f4f7fb}*{box-sizing:border-box}body{margin:0}header{background:#112846;color:white;padding:19px 25px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}header h1{font-size:21px;margin:0}header small{color:#e3c27a}button,.btn{cursor:pointer;border:0;border-radius:8px;background:#2459b9;color:white;padding:10px 13px;font-weight:600}button:hover{filter:brightness(.94)}button.secondary{background:#e8eef8;color:#18345a}button.danger{background:#ad3546}button.gold{background:#c3953e;color:#1b2533}nav{display:flex;gap:8px;padding:15px 22px;background:white;border-bottom:1px solid #e1e6ee;flex-wrap:wrap}nav button{background:#edf1f7;color:#1b3558}nav button.active{background:#193e79;color:white}main{max-width:1250px;margin:auto;padding:20px}.panel{background:white;border:1px solid #e1e7f0;border-radius:13px;padding:18px;margin-bottom:18px;box-shadow:0 2px 10px #122b5010}h2{margin:0 0 13px;font-size:20px}h3{font-size:16px;margin:12px 0}p,.muted{color:#59677c}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:13px;font-weight:bold;color:#42516a}input,select,textarea{width:100%;border:1px solid #c9d3e1;border-radius:7px;padding:10px;background:#fff;color:#182841;font-size:14px}textarea#obs{font-size:12px;line-height:1.5;font-family:Arial,Helvetica,sans-serif}input:focus,select:focus{outline:2px solid #9db7f5}.actions{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:780px}th,td{padding:10px;border-bottom:1px solid #e8edf4;text-align:left;font-size:13px}th{background:#f0f4fa;color:#32445d}td input,td select{min-width:90px}td button{padding:7px 9px}.right{text-align:right}.total{font-size:26px;font-weight:800;color:#173c78}.hidden{display:none!important}.hint{background:#fff7e8;padding:11px;border-left:4px solid #c3953e;border-radius:6px;margin:12px 0}.bad{color:#a32c40;font-weight:bold}.good{color:#16603e;font-weight:bold}.small{font-size:12px}.pill{background:#e8eff9;border-radius:20px;padding:6px 10px;display:inline-block}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.print-only{display:none}@media(max-width:650px){main{padding:10px}header{padding:15px}nav{padding:10px}.panel{padding:12px}}@media print{body{background:white}header,nav,.no-print,.actions,button,.hint,main>.tab{display:none!important}main{padding:0;max-width:none}#printView{display:block!important}#printView .panel{border:0;box-shadow:none;margin:0;padding:0}.screen-only{display:none!important}table{min-width:0}th,td{padding:8px;font-size:12px} @page{size:A4;margin:15mm}}
-select optgroup{font-weight:900;color:#112846;background:#e0e8f5;font-style:normal}select optgroup option{font-weight:400;color:#182841;background:#fff}select option{font-weight:400;color:#182841;background:#fff}</style>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LP Consultoria e Assessoria em RH — Sistema de Orçamentos</title><style>
+:root{font-family:Arial,Helvetica,sans-serif;color:#17233b;background:#f4f7fb}*{box-sizing:border-box}body{margin:0}
+header{background:linear-gradient(135deg, #112846 0%, #1c3d6e 100%);color:white;padding:22px 30px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;border-bottom:3px solid #c3953e}
+header h1{font-size:22px;margin:0;letter-spacing:0.5px;color:#ffffff}header small{color:#e3c27a;display:block;margin-top:4px;font-weight:600}
+button,.btn{cursor:pointer;border:0;border-radius:8px;background:#2459b9;color:white;padding:10px 14px;font-weight:600}button:hover{filter:brightness(.94)}button.secondary{background:#e8eef8;color:#18345a}button.danger{background:#ad3546}button.gold{background:#c3953e;color:#1b2533;font-weight:bold}button.gold:hover{background:#d4a445}
+nav{display:flex;gap:8px;padding:15px 22px;background:white;border-bottom:1px solid #e1e6ee;flex-wrap:wrap}nav button{background:#edf1f7;color:#1b3558}nav button.active{background:#112846;color:#e3c27a}
+main{max-width:1250px;margin:auto;padding:20px}.panel{background:white;border:1px solid #e1e7f0;border-radius:13px;padding:18px;margin-bottom:18px;box-shadow:0 2px 10px #122b5010}h2{margin:0 0 13px;font-size:20px;color:#112846}h3{font-size:16px;margin:12px 0;color:#112846}p,.muted{color:#59677c}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:13px;font-weight:bold;color:#112846}input,select,textarea{width:100%;border:1px solid #c9d3e1;border-radius:7px;padding:10px;background:#fff;color:#182841;font-size:14px}input:focus,select:focus{outline:2px solid #c3953e}.actions{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:780px}th,td{padding:10px;border-bottom:1px solid #e8edf4;text-align:left;font-size:13px}th{background:#f0f4fa;color:#112846}td input,td select{min-width:90px}td button{padding:7px 9px}.right{text-align:right}.total{font-size:26px;font-weight:800;color:#112846}.hidden{display:none!important}.hint{background:#fff7e8;padding:11px;border-left:4px solid #c3953e;border-radius:6px;margin:12px 0}.bad{color:#a32c40;font-weight:bold}.good{color:#16603e;font-weight:bold}.small{font-size:12px}
+.pill{background:#112846;color:#e3c27a!important;border:1px solid #c3953e;border-radius:20px;padding:6px 12px;display:inline-block;font-weight:bold}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.print-only{display:none}
+
+/* Estilo da Tela de Login */
+#loginBox{max-width:440px;margin:50px auto;padding:32px;background:white;border-radius:14px;box-shadow:0 6px 22px rgba(17,40,70,0.18);border-top:5px solid #c3953e;border-left:1px solid #e1e7f0;border-right:1px solid #e1e7f0;border-bottom:1px solid #e1e7f0}
+#loginBox h2{color:#112846;text-align:center;font-size:18px;margin-bottom:4px;text-transform:uppercase;letter-spacing:1px}
+#loginBox h3{color:#c3953e;text-align:center;font-size:15px;margin-top:0;margin-bottom:20px;font-weight:bold}
+</style>
 <!-- Firebase SDK -->
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
-</head><body><header><div><h1>LP CONSULTORIA EM RH</h1><small>Sistema de Orçamentos • Usuário Online</small></div><span class="pill" style="color:#18345a">Sincronizado com Admin</span></header><nav class="no-print"><button data-tab="orc" class="active">Novo orçamento</button><button data-tab="hist">Histórico</button><button data-tab="backup">Ajuda</button></nav><main>
-<section id="orc" class="tab"><div class="panel"><div class="row"><h2>Novo orçamento</h2><button class="secondary" onclick="novoOrcamento()">Limpar / novo</button></div><div class="grid"><div class="field"><label>Nome da empresa / cliente</label><input id="cliente" placeholder="Nome do cliente"></div><div class="field"><label>Contato</label><input id="contato" placeholder="Telefone ou e-mail"></div><div class="field"><label>Data</label><input type="date" id="data"></div><div class="field"><label>Validade (dias)</label><input type="number" id="validade" min="1" value="15"></div></div><div class="grid" style="margin-top:12px"><div class="field"><label>Forma de pagamento</label><select id="formaPagamento" onchange="atualizarTotal();atualizarDescricoes()"><option value="">Selecionar forma de pagamento</option><option value="Pix">Pix</option><option value="Boleto bancário">Boleto bancário</option><option value="Pix ou boleto bancário">Pix ou boleto bancário</option></select></div><div class="field"><label>Parcelamento (juros automáticos)</label><select id="parcelas" onchange="atualizarTotal();atualizarDescricoes()"><option value="1">À vista / 1 vez</option><option value="2">2 vezes</option><option value="3">3 vezes</option><option value="4">4 vezes</option><option value="5">5 vezes</option><option value="6">6 vezes</option><option value="7">7 vezes</option><option value="8">8 vezes</option><option value="9">9 vezes</option><option value="10">10 vezes</option><option value="11">11 vezes</option><option value="12">12 vezes</option></select></div></div><div class="panel" style="margin-top:12px;background:#f8fafc;border:1px dashed #c9d3e1"><h3>Desconto comercial — uso interno (não aparece para o cliente)</h3><div class="grid"><div class="field"><label>Tipo de desconto</label><select id="tipoDesconto" onchange="atualizarTotal();atualizarDescricoes()"><option value="nenhum">Sem desconto</option><option value="percentual">Percentual (%)</option><option value="valor">Valor fixo (R$)</option></select></div><div class="field"><label>Desconto</label><input id="valorDesconto" type="number" min="0" step="0.01" value="0" oninput="atualizarTotal();atualizarDescricoes()"></div></div><p class="small muted">O desconto é aplicado antes dos juros. Parcelas: 1x sem juros, 2x com 2% e de 3x a 12x com 2,50% sobre o valor descontado. O valor final é distribuído proporcionalmente entre os itens na versão enviada ao cliente. O tipo e o valor do desconto não aparecem no orçamento baixado nem no PDF.</p></div><div class="field" style="margin-top:12px"><label>Observações e condições</label><textarea id="obs" rows="7" readonly style="display:none" aria-hidden="true" placeholder="Prazo de execução, pagamento, reposição etc."></textarea><div id="obsEditor" role="textbox" aria-label="Observações e condições" contenteditable="true" style="white-space:pre-wrap;min-height:145px;background:#fff;color:#17233b;border:1px solid #c9d3e1;border-radius:8px;padding:12px;line-height:1.5;font-size:13px"></div><p class="small muted">As descrições dos serviços selecionados aparecem automaticamente. Você pode acrescentar condições próprias.</p></div></div>
-<div class="panel"><div class="row"><h2>Itens do orçamento</h2><button onclick="adicionarItem()">+ Adicionar serviço</button></div><p class="small">Cada linha pode conter um serviço ou adicional independente. Os preços são atualizados automaticamente pela administradora.</p><div class="scroll"><table><thead><tr><th style="min-width:220px">Serviço / plano</th><th>Quantidade</th><th>Preço unitário</th><th>Subtotal</th><th class="no-print">Ação</th></tr></thead><tbody id="itens"></tbody></table></div><div id="erros" class="bad small" style="margin:12px 0"></div><div class="row" style="margin-top:16px"><span class="muted">Total do orçamento <span id="resumoInterno" class="small" style="display:block"></span><span id="resumoParcelas" class="small" style="display:block"></span></span><span class="total" id="total">R$ 0,00</span></div><div class="actions"><button class="gold" onclick="salvarOrcamento()">Salvar orçamento</button><button onclick="baixarOrcamento()">⬇ Baixar orçamento</button><button onclick="imprimirOrcamento()">Imprimir / salvar PDF</button><button class="secondary" onclick="adicionarItem()">+ Outro item</button></div><div class="hint">O botão “Baixar orçamento” salva uma cópia independente em HTML, que pode ser aberta e impressa. Para salvar diretamente em PDF, clique em “Imprimir / salvar PDF” e escolha “Salvar como PDF” na janela do navegador. Preços vazios bloqueiam a emissão para evitar orçamento incorreto.</div></div></section>
-<section id="hist" class="tab hidden"><div class="panel"><h2>Histórico de orçamentos</h2><p>Os orçamentos são armazenados neste navegador.</p><div class="scroll"><table><thead><tr><th>Número</th><th>Data</th><th>Cliente</th><th>Total</th><th>Ações</th></tr></thead><tbody id="listaHist"></tbody></table></div></div></section>
-<section id="backup" class="tab hidden"><div class="panel"><h2>Informações</h2><p>Este sistema está conectado ao banco de dados online da administradora. Sempre que houver alteração de preços ou serviços, eles aparecerão aqui automaticamente.</p></div></section>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+</head><body>
+<header>
+  <div>
+    <h1>LP CONSULTORIA E ASSESSORIA EM RH</h1>
+    <small>Sistema de Orçamentos — Área do Usuário</small>
+  </div>
+  <span class="pill" id="statusPill">Aguardando Login</span>
+</header>
+
+<!-- TELA DE LOGIN COM NOME DO SISTEMA -->
+<div id="loginBox">
+  <h2>LP Consultoria em RH</h2>
+  <h3>SISTEMA DE ORÇAMENTOS</h3>
+  <p class="small muted" style="text-align:center;margin-bottom:20px">Insira seu e-mail e senha para acessar o painel.</p>
+  <div class="field" style="margin-bottom:14px"><label>E-mail corporativo</label><input type="email" id="loginEmail" placeholder="seuemail@lpconsultoria.com"></div>
+  <div class="field" style="margin-bottom:20px"><label>Senha de acesso</label><input type="password" id="loginSenha" placeholder="••••••••"></div>
+  <button style="width:100%" class="gold" onclick="fazerLogin()">Entrar no Sistema</button>
+  <div id="loginErro" class="bad small" style="margin-top:12px;text-align:center"></div>
+</div>
+
+<!-- CONTEÚDO PROTEGIDO DO SISTEMA (OCULTO ATÉ LOGAR) -->
+<div id="sistemaConteudo" class="hidden">
+<nav class="no-print"><button data-tab="orc" class="active">Novo orçamento</button><button data-tab="hist">Histórico</button><button class="secondary" onclick="fazerLogout()">Sair do Sistema</button></nav><main>
+<section id="orc" class="tab"><div class="panel"><div class="row"><h2>Novo orçamento</h2><button class="secondary" onclick="novoOrcamento()">Limpar / novo</button></div><div class="grid"><div class="field"><label>Nome da empresa / cliente</label><input id="cliente" placeholder="Nome do cliente"></div><div class="field"><label>Contato</label><input id="contato" placeholder="Telefone ou e-mail"></div><div class="field"><label>Data</label><input type="date" id="data"></div><div class="field"><label>Validade (dias)</label><input type="number" id="validade" min="1" value="15"></div></div><div class="grid" style="margin-top:12px"><div class="field"><label>Forma de pagamento</label><select id="formaPagamento" onchange="atualizarTotal();atualizarDescricoes()"><option value="">Selecionar forma de pagamento</option><option value="Pix">Pix</option><option value="Boleto bancário">Boleto bancário</option><option value="Pix ou boleto bancário">Pix ou boleto bancário</option></select></div><div class="field"><label>Parcelamento (juros automáticos)</label><select id="parcelas" onchange="atualizarTotal();atualizarDescricoes()"><option value="1">À vista / 1 vez</option><option value="2">2 vezes</option><option value="3">3 vezes</option><option value="4">4 vezes</option><option value="5">5 vezes</option><option value="6">6 vezes</option><option value="7">7 vezes</option><option value="8">8 vezes</option><option value="9">9 vezes</option><option value="10">10 vezes</option><option value="11">11 vezes</option><option value="12">12 vezes</option></select></div></div><div class="panel" style="margin-top:12px;background:#f8fafc;border:1px dashed #c9d3e1"><h3>Desconto comercial — uso interno</h3><div class="grid"><div class="field"><label>Tipo de desconto</label><select id="tipoDesconto" onchange="atualizarTotal();atualizarDescricoes()"><option value="nenhum">Sem desconto</option><option value="percentual">Percentual (%)</option><option value="valor">Valor fixo (R$)</option></select></div><div class="field"><label>Desconto</label><input id="valorDesconto" type="number" min="0" step="0.01" value="0" oninput="atualizarTotal();atualizarDescricoes()"></div></div></div><div class="field" style="margin-top:12px"><label>Observações e condições</label><textarea id="obs" rows="7" readonly style="display:none" aria-hidden="true"></textarea><div id="obsEditor" role="textbox" aria-label="Observações e condições" contenteditable="true" style="white-space:pre-wrap;min-height:145px;background:#fff;color:#17233b;border:1px solid #c9d3e1;border-radius:8px;padding:12px;line-height:1.5;font-size:13px"></div></div></div>
+<div class="panel"><div class="row"><h2>Itens do orçamento</h2><button onclick="adicionarItem()">+ Adicionar serviço</button></div><div class="scroll"><table><thead><tr><th style="min-width:220px">Serviço / plano</th><th>Quantidade</th><th>Preço unitário</th><th>Subtotal</th><th class="no-print">Ação</th></tr></thead><tbody id="itens"></tbody></table></div><div id="erros" class="bad small" style="margin:12px 0"></div><div class="row" style="margin-top:16px"><span class="muted">Total do orçamento <span id="resumoInterno" class="small" style="display:block"></span><span id="resumoParcelas" class="small" style="display:block"></span></span><span class="total" id="total">R$ 0,00</span></div><div class="actions"><button class="gold" onclick="salvarOrcamento()">Salvar orçamento</button><button onclick="baixarOrcamento()">⬇ Baixar orçamento</button><button onclick="imprimirOrcamento()">Imprimir / salvar PDF</button><button class="secondary" onclick="adicionarItem()">+ Outro item</button></div></div></section>
+<section id="hist" class="tab hidden"><div class="panel"><h2>Histórico de orçamentos</h2><div class="scroll"><table><thead><tr><th>Número</th><th>Data</th><th>Cliente</th><th>Total</th><th>Ações</th></tr></thead><tbody id="listaHist"></tbody></table></div></div></section>
 <section id="printView" class="hidden print-only"></section>
-</main><script>
+</main></div>
+
+<script>
 'use strict';
 const firebaseConfig = { databaseURL: "https://sistema-orcamentos-lp-default-rtdb.firebaseio.com/" };
 firebase.initializeApp(firebaseConfig);
 const dbRef = firebase.database().ref('catalogo_servicos');
+const auth = firebase.auth();
 
-const moeda=v=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(v||0);const hoje=()=>new Date().toISOString().slice(0,10);const parsePreco=s=>{if(typeof s==='number')return s;let v=String(s??'').trim().replace(/R\$/g,'').replace(/\s/g,'');if(!v)return null;if(v.includes(','))v=v.replace(/\./g,'').replace(',','.');let n=Number(v);return Number.isFinite(n)&&n>=0?n:null};const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,8);
+function fazerLogin(){
+  const email = document.getElementById('loginEmail').value;
+  const senha = document.getElementById('loginSenha').value;
+  document.getElementById('loginErro').textContent = '';
+  auth.signInWithEmailAndPassword(email, senha).catch(error => {
+    document.getElementById('loginErro').textContent = 'E-mail ou senha inválidos.';
+  });
+}
+function fazerLogout(){ auth.signOut(); }
 
+auth.onAuthStateChanged(user => {
+  if (user) {
+    document.getElementById('loginBox').classList.add('hidden');
+    document.getElementById('sistemaConteudo').classList.remove('hidden');
+    document.getElementById('statusPill').textContent = 'Sessão Autenticada';
+  } else {
+    document.getElementById('loginBox').classList.remove('hidden');
+    document.getElementById('sistemaConteudo').classList.add('hidden');
+    document.getElementById('statusPill').textContent = 'Aguardando Login';
+  }
+});
+
+const moeda=v=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(v||0);const hoje=()=>new Date().toISOString().slice(0,10);const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,8);
 let db={servicos:[],orcamentos:[]};
 let itens=[],editando=null;
 
@@ -29,55 +87,12 @@ dbRef.on('value', snapshot=>{
 
 function aba(nome){document.querySelectorAll('.tab').forEach(e=>e.classList.toggle('hidden',e.id!==nome));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===nome));if(nome==='hist')renderHistorico()}document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>aba(b.dataset.tab)));
 
-function adicionarItem(id='',qtd=1,precoOverride=null,descricaoSalva=''){itens.push({rid:uid(),id,qtd,precoOverride,descricaoSalva});renderItens()}function categoriaServico(s){
- const n=String(s.nome||'').toLocaleLowerCase('pt-BR');
- if(n.includes('mensalidade r&s')||n.includes('recrutamento mensal'))return 'RECRUTAMENTO E SELEÇÃO — MENSAL';
- if(n.includes('recrutamento e seleção')||n.includes('candidatos extras'))return 'RECRUTAMENTO E SELEÇÃO — POR VAGA';
- if(n.includes('campanha meta')||n.includes('marketing'))return 'CAMPANHAS E MARKETING';
- if(n.includes('diagnóstico'))return 'DIAGNÓSTICO ORGANIZACIONAL';
- if(n.includes('estruturação'))return 'ESTRUTURAÇÃO DE RH';
- if(n.includes('implantação'))return 'IMPLANTAÇÃO DE RH';
- if(n.includes('terceirização'))return 'TERCEIRIZAÇÃO DE RH';
- if(n.includes('nr-1')||n.includes('nr 1'))return 'NR-1 — RISCOS PSICOSSOCIAIS';
- if(n.includes('desempenho')||n.includes('carreira'))return 'GESTÃO DE DESEMPENHO E CARREIRA';
- if(n.includes('teste comportamental')||n.includes('disc')||n.includes('soft skill'))return 'TESTES COMPORTAMENTAIS';
- if(n.includes('acompanhamento presencial'))return 'ACOMPANHAMENTO PRESENCIAL';
- if(n.includes('colaboradores excedentes'))return 'COLABORADORES EXCEDENTES';
- if(n.includes('horas extras'))return 'HORAS EXTRAS';
- if(n.includes('diárias extras'))return 'DIÁRIAS EXTRAS';
- if(n.includes('deslocamento uber')||n.includes('uber'))return 'DESLOCAMENTO — USO INTERNO';
- return 'OUTROS SERVIÇOS';
-}
-const ordemCategorias=['RECRUTAMENTO E SELEÇÃO — POR VAGA','RECRUTAMENTO E SELEÇÃO — MENSAL','DIAGNÓSTICO ORGANIZACIONAL','ESTRUTURAÇÃO DE RH','IMPLANTAÇÃO DE RH','TERCEIRIZAÇÃO DE RH','GESTÃO DE DESEMPENHO E CARREIRA','NR-1 — RISCOS PSICOSSOCIAIS','TESTES COMPORTAMENTAIS','CAMPANHAS E MARKETING','ACOMPANHAMENTO PRESENCIAL','COLABORADORES EXCEDENTES','HORAS EXTRAS','DIÁRIAS EXTRAS','DESLOCAMENTO — USO INTERNO','OUTROS SERVIÇOS'];
-function opcoes(sel){
- const ordenados=db.servicos.slice().sort((a,b)=>{
-  const ga=categoriaServico(a),gb=categoriaServico(b),ia=ordemCategorias.indexOf(ga),ib=ordemCategorias.indexOf(gb);
-  return (ia<0?999:ia)-(ib<0?999:ib)||ga.localeCompare(gb,'pt-BR')||String(a.nome||'').localeCompare(String(b.nome||''),'pt-BR',{numeric:true})||String(a.plano||'').localeCompare(String(b.plano||''),'pt-BR',{numeric:true});
- });
- let html='<option value="">Selecione um serviço</option>',grupo=null;
- for(const s of ordenados){
-  const categoria=categoriaServico(s);
-  if(categoria!==grupo){
-   if(grupo!==null)html+='</optgroup>';
-   grupo=categoria;
-   html+=`<optgroup label="${esc(categoria)}">`;
-  }
-  html+=`<option value="${esc(s.id)}" ${s.id===sel?'selected':''}>${esc(s.nome)} — ${esc(s.plano||s.unidade)}</option>`;
- }
- return html+(grupo!==null?'</optgroup>':'');
-}
-function renderItens(){let t=document.getElementById('itens');t.innerHTML=itens.map(i=>{let s=db.servicos.find(x=>x.id===i.id),preco=i.precoOverride!==null?i.precoOverride:s?.preco??null;return `<tr><td><select onchange="alterarItem('${i.rid}',this.value)">${opcoes(i.id)}</select>${s?`<div class="small muted">Cobrança: ${esc(s.unidade)}</div>`:i.descricaoSalva?`<div class="small">${esc(i.descricaoSalva)}</div>`:''}</td><td><input aria-label="Quantidade" type="number" min="0.01" step="any" value="${i.qtd}" onchange="alterarQtd('${i.rid}',this.value)"></td><td>${preco===null?'<span class="bad">Preço não cadastrado</span>':moeda(preco)}</td><td><b>${preco===null?'—':moeda(preco*i.qtd)}</b></td><td><button class="danger" onclick="removerItem('${i.rid}')">Remover</button></td></tr>`}.join('')||'<tr><td colspan="5">Clique em “Adicionar serviço” para começar.</td></tr>';atualizarTotal();atualizarDescricoes()}
-function alterarItem(rid,id){let i=itens.find(x=>x.rid===rid);i.id=id;i.precoOverride=null;i.descricaoSalva='';renderItens()}function alterarQtd(rid,val){let i=itens.find(x=>x.rid===rid);i.qtd=Number(val);renderItens()}function removerItem(rid){itens=itens.filter(x=>x.rid!==rid);renderItens()}function validar(){let erros=[];if(!itens.length)erros.push('Adicione ao menos um serviço.');for(let i of itens){let s=db.servicos.find(x=>x.id===i.id);if(!s&&!i.descricaoSalva)erros.push('Há uma linha sem serviço selecionado.');let p=i.precoOverride!==null?i.precoOverride:s?.preco;if(p===null||p===undefined||!Number.isFinite(p))erros.push('Há serviço sem preço cadastrado.');if(!Number.isFinite(i.qtd)||i.qtd<=0)erros.push('A quantidade deve ser maior que zero.')}return [...new Set(erros)]}function totalizar(){return itens.reduce((acc,i)=>{let s=db.servicos.find(x=>x.id===i.id),p=i.precoOverride!==null?i.precoOverride:s?.preco;return acc+(Number.isFinite(p)&&Number.isFinite(i.qtd)?p*i.qtd:0)},0)}function calculoDesconto(){
- const bruto=totalizar(),tipo=document.getElementById('tipoDesconto').value,v=Number(document.getElementById('valorDesconto').value)||0;
- const desc=tipo==='percentual'?bruto*v/100:tipo==='valor'?v:0;
- return {bruto,desconto:Math.round(Math.max(0,Math.min(bruto,desc))*100)/100,erro:v<0||(tipo==='percentual'&&v>100)||(tipo==='valor'&&v>bruto)};
-}
-function taxaJuros(){let n=Number(document.getElementById('parcelas').value)||1;return n===1?0:n===2?0.02:0.025}
-function resumoFinanceiro(){let base=Math.round((calculoDesconto().bruto-calculoDesconto().desconto)*100)/100,taxa=taxaJuros(),juros=Math.round(base*taxa*100)/100;return {base,taxa,juros,total:Math.round((base+juros)*100)/100}}
-function totalLiquido(){return resumoFinanceiro().total}
-function parcelamentoCentavos(total,n){n=Math.max(1,Math.min(12,Number(n)||1));let cents=Math.round(total*100),base=Math.floor(cents/n),resto=cents-base*n;return Array.from({length:n},(_,i)=>(base+(i>=n-resto?1:0))/100)}
-function atualizarTotal(){let erros=validar(),c=calculoDesconto();if(c.erro)erros.push('Desconto inválido: informe até 100% ou até o valor bruto.');document.getElementById('erros').textContent=erros.join(' ');let liquido=totalLiquido();document.getElementById('total').textContent=(erros.length?'Total pendente: ':'')+moeda(liquido);document.getElementById('resumoInterno').textContent=c.desconto?'Subtotal: '+moeda(c.bruto)+' | Desconto interno: '+moeda(c.desconto):'';let n=Number(document.getElementById('parcelas').value)||1,forma=document.getElementById('formaPagamento').value;let fin=resumoFinanceiro(),partes=parcelamentoCentavos(fin.total,n);document.getElementById('resumoParcelas').textContent=forma?(n===1?'À vista: '+moeda(fin.total)+' (sem juros)':'Pagamento: '+n+' parcelas; juros de '+(n===2?'2%':'2,50%')+' ('+moeda(fin.juros)+'); total '+moeda(fin.total)+'; parcelas de '+moeda(partes[0])+(partes.some(x=>x!==partes[0])?' a '+moeda(partes[partes.length-1]):'')):'';}
-
-function novoOrcamento(){editando=null;document.getElementById('cliente').value='';document.getElementById('contato').value='';document.getElementById('data').value=hoje();document.getElementById('validade').value='15';document.getElementById('formaPagamento').value='';document.getElementById('parcelas').value='1';document.getElementById('tipoDesconto').value='nenhum';document.getElementById('valorDesconto').value='0';document.getElementById('obs').value='';document.getElementById('obsEditor').innerHTML='';itens=[];renderItens();}
+function adicionarItem(id='',qtd=1,precoOverride=null,descricaoSalva=''){itens.push({rid:uid(),id,qtd,precoOverride,descricaoSalva});renderItens()}
+function opcoes(sel){const ordenados=db.servicos.slice();let html='<option value="">Selecione um serviço</option>';for(const s of ordenados){html+=`<option value="${s.id}" ${s.id===sel?'selected':''}>${s.nome} — ${s.plano||s.unidade}</option>`;}return html;}
+function renderItens(){let t=document.getElementById('itens');if(t)t.innerHTML=itens.map(i=>{let s=db.servicos.find(x=>x.id===i.id),preco=i.precoOverride!==null?i.precoOverride:s?.preco??null;return `<tr><td><select onchange="alterarItem('${i.rid}',this.value)">${opcoes(i.id)}</select></td><td><input type="number" min="0.01" step="any" value="${i.qtd}" onchange="alterarQtd('${i.rid}',this.value)"></td><td>${preco===null?'<span class="bad">Preço não cadastrado</span>':moeda(preco)}</td><td><b>${preco===null?'—':moeda(preco*i.qtd)}</b></td><td><button class="danger" onclick="removerItem('${i.rid}')">Remover</button></td></tr>`}).join('')||'<tr><td colspan="5">Clique em “Adicionar serviço” para começar.</td></tr>';atualizarTotal();}
+function alterarItem(rid,id){let i=itens.find(x=>x.rid===rid);i.id=id;renderItens()}function alterarQtd(rid,val){let i=itens.find(x=>x.rid===rid);i.qtd=Number(val);renderItens()}function removerItem(rid){itens=itens.filter(x=>x.rid!==rid);renderItens()}
+function totalizar(){return itens.reduce((acc,i)=>{let s=db.servicos.find(x=>x.id===i.id),p=i.precoOverride!==null?i.precoOverride:s?.preco;return acc+(Number.isFinite(p)&&Number.isFinite(i.qtd)?p*i.qtd:0)},0)}
+function atualizarTotal(){let liquido=totalizar();let el=document.getElementById('total');if(el)el.textContent=moeda(liquido);}
+function novoOrcamento(){editando=null;document.getElementById('cliente').value='';document.getElementById('contato').value='';document.getElementById('data').value=hoje();itens=[];renderItens();}
 novoOrcamento();
 </script></body></html>
